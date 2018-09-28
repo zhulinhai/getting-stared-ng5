@@ -9,7 +9,7 @@ const initialState: State = {
     cards: []
 };
 
-export function reducer(state = initialState, action): State {
+export function reducer(state = initialState, action: cards.Actions): State {
     switch (action.type) {
         case cards.ADD:
         return {

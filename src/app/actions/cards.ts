@@ -9,7 +9,7 @@ export class Add implements Action {
 
 export class Remove implements Action {
     readonly type = REMOVE;
-    constructor(public playload: any) {}
+    constructor(public payload: any) {}
 }
 
 export  type Actions = Add | Remove;
