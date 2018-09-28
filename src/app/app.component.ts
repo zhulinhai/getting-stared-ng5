@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CardService } from './services/card.service';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +25,6 @@ export class AppComponent {
     this.cards.push({text: cardText});
   }
 
-  constructor(private cardService: CardService) {
-    cardService.get().subscribe((cards: any) => this.cards = cards);
+  constructor() {
   }
 }
