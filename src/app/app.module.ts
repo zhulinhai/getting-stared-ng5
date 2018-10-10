@@ -8,6 +8,7 @@ import { CardListComponent } from './card-list/card-list.component';
 import { NewCardInputComponent } from './new-card-input/new-card-input.component';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers} from './reducers/index';
+import { CardService } from './services/card.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { reducers, metaReducers} from './reducers/index';
     ReactiveFormsModule,
     StoreModule.forRoot(reducers, { metaReducers }),
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

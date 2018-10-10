@@ -32,7 +32,7 @@ export class AppComponent {
   // }
 
   addCard(card: Card) {
-    // this.store.dispatch(new cards.AddCard(card));
+    this.store.dispatch(new cards.AddCard(card));
   }
 
   constructor(private store: Store<fromRoot.State>) {
